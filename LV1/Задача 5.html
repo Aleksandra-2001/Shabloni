@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 5</title>
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <style>
+        #sino{
+            background-color: lightskyblue;
+            width: 250px;
+            padding: 5px;
+        }
+        h1{
+            font-size: 20px;
+            font-weight: normal;
+
+        }
+        p{
+            font-size: 15px;
+        }
+    </style>
+    <script>
+        $(document).ready(function (){
+            $("#zgolemi").click(function (){
+                $("p").css("fontSize", "25px")
+            })
+            $("#namali").click(function (){
+                $("p").css("fontSize", "5px")
+            })
+            $("#pocetna").click(function (){
+                $("p").css("fontSize", "15px")
+            })
+        })
+
+    </script>
+
+</head>
+<body>
+<div id="sino">
+<h1>Големина на фонт :</h1>
+    <button id="pocetna">Почетна</button>
+    <button id="zgolemi">Зголеми</button>
+    <button id="namali">Нмали</button>
+</div>
+<div>
+    <h3>
+        How to connect to the internet
+    </h3>
+    <p>
+        If you want to access the internet at home, you'll need an Internet Service Provider (ISP) and a router to connect to the ISP. ISPs often provide a router with their service. This means more than one computer or device in your house can use the broadband connection at the same time.
+        Some devices can also use Wi-Fi to connect to the router.
+        As ISPs often improve their services, it is useful to have updated information about what they can offer. Go to your ISP's website and see if they use an online checker where you can find out what services are available in your area.
+    </p>
+    <p>
+        Go to your ISP's website and see if they use an online checker where you can find out what services are available in your area. You might need to use your postcode or telephone number in the online checker.
+        It is helpful to get recommendations from a reliable source, or from friends who have an ISP. When you are researching the ISP on your own, get accurate, detailed information about their services.
+
+
+    </p>
+</div>
+</body>
+</html>

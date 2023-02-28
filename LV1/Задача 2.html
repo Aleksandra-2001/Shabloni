@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 2</title>
+    <style>
+        #izgled{
+
+        }
+    </style>
+</head>
+<body>
+<script>
+    <!--
+    function proverka(){
+        var ime=document.getElementById("name").value
+        var  umetnicko=document.getElementById("umetnicko").value
+        var pol=document.getElementById("pol").value
+        var zanr=document.getElementById("zanr").value
+        if(ime=="" || umetnicko=="" || pol=="" || zanr==""){
+            alert("Сите полиња се задолжителни")
+        }
+        else{
+            alert(""+ime+" "+umetnicko+" "+pol+" "+zanr+" - успешно се пријавивте.")
+        }
+    }
+    // -->
+</script>
+<h1>Форма за пријавување на X-Factor</h1>
+<div id="izgled">
+<label>Име:</label>
+<input type="text" id="name">
+<label>Уметничко име:</label>
+<input type="text" id="umetnicko">
+<form id="pol">
+    <label>Пол</label>
+    <input type="radio" >
+    <label>Машки</label>
+    <input type="radio">
+    <label>Женски</label>
+</form>
+<label>Жанр</label>
+<select id="zanr">
+    <option>Classical music</option>
+    <option>Rock</option>
+    <option>Pop</option>
+    <option>Hip hop</option>
+</select>
+<button onclick="proverka()">Пријави се</button>
+</div>
+</body>
+</html>
