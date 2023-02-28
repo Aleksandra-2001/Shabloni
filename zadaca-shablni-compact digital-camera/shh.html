@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery/jquery/jquery.js"></script>
+    <style>
+        nav{
+            text-align: center;
+            background-color: lightblue;
+            height: 50px;
+        }
+        a{
+            display: inline;
+            text-decoration: none;
+            color: purple;
+            padding-right: 20px;
+            cursor: pointer;
+        }
+        ul {
+            list-style: none;
+        }
+        .gore{
+            display: inline;
+            text-align: center;
+        }
+        .naslov{
+            color: purple;
+        }
+        #glaven{
+            margin: 5px;
+            width: 200px;
+        }
+        .sekcija {
+            margin: 2px;
+            padding: 2px;
+            border: 1px solid gray;
+
+        }
+        .naslov{
+            font-size:14px;
+            padding: 5px;
+            font-weight:bold;
+            cursor: pointer;
+
+        }
+        .naslov:hover{
+            background-color: lightpink;
+        }
+        .lista{
+            display: none;
+        }
+        .lista li{
+            color: maroon;
+            padding: 2px;
+        }
+    </style>
+
+</head>
+<body>
+<script>
+    $(document).ready(function (){
+        $(".sekcija .naslov").click(function (){
+            $(this).siblings(".lista").slideToggle()
+        })
+    })
+</script>
+<nav>
+    <ul>
+        <li class="gore"><a href="Compact dIgiral camera.html">Compact Digital Cameras</a></li>
+        <li class="gore"><a href="Dslr camera.html">DSLR Cameras</a></li>
+        <li class="gore" ><a href="Speedlite flashes.html">Speedlite Flashes</a></li>
+    </ul>
+</nav>
+<div id="glaven">
+    <div class="sekcija">
+        <div class="naslov">Services & apps</div>
+        <div class="lista">
+            <div class="sekcija">
+        <div class="naslov">Servises  </div>
+        <div class="lista">
+                <ul>
+                    <li>irista</li>
+                    <li>Lifecake</li>
+                    <li>Photoboks</li>
+                </ul>
+        </div>
+            </div>
+            <div class="sekcija">
+            <div class="naslov">Apss</div>
+        <div class="lista">
+                <ul>
+                    <li>Camera connect</li>
+                    <li>Eos remote</li>
+                </ul>
+
+        </div>
+            </div>
+    </div>
+    </div>
+    <div class="sekcija">
+         <div class="naslov">Get inspired</div>
+        <div class="lista">
+        <ul>
+        <li>Stories</li>
+        <li>techniques</li>
+        <li>Canon Connectivity</li>
+        <li>Showcase</li>
+        <li>Galery</li>
+        </ul>
+        </div>
+    </div>
+    <div class="sekcija">
+        <div class="naslov">Support</div>
+        <div class="lista">
+        <ul>
+        <li>Drivers</li>
+        <li>Softwer</li>
+        <li>Manuals</li>
+        </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compact dIgiral camera</title>
+    <script src="jquery/jquery/jquery.js"></script>
+    <style>
+        h1{
+            color: purple;
+            text-align: center;
+        }
+        #card{
+          border: 1px solid black;
+          height: 220px;
+        }
+        h4{
+            text-align: center;
+        }
+        #grid{
+            display: block;
+            width: 100%;
+        }
+        #grid #card {
+            float: left;
+            width: calc((100% / 4) - 10px);
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+        #glaven{
+            display: block;
+            padding-top: 450px;
+            width: 200px;
+        }
+        .sekcija {
+            display: block;
+            margin: 2px;
+            padding: 2px;
+            border: 1px solid gray;
+
+        }
+        .naslov{
+            font-size:14px;
+            padding: 5px;
+            font-weight:bold;
+            cursor: pointer;
+
+        }
+        .naslov:hover{
+            background-color: lightpink;
+        }
+        .lista{
+            display: none;
+        }
+        .lista li{
+            list-style: none;
+            color: maroon;
+            padding: 2px;
+        }
+    </style>
+
+</head>
+<body>
+<script>
+    $(document).ready(function (){
+        $("div div").find("button").hide()
+        $("div div").hover(function (){
+            $(this).find("button").show()
+        },function (){
+            $(this).find("button").hide()
+        })
+    })
+    $(document).ready(function (){
+        $(".sekcija .naslov").click(function (){
+            $(this).siblings(".lista").slideToggle()
+        })
+    })
+</script>
+<h1>Compact digiral camera</h1>
+<div id="grid">
+<div id="card">
+    <h4>title</h4>
+    <img src="sliki/CompactDigitalCameras/PowerShot G3 X.png" height="120" width="120"/>
+    <button>Add to cart</button>
+    <button>Rate</button>
+</div>
+<div id="card">
+    <h4>title</h4>
+    <img src="sliki/CompactDigitalCameras/PowerShot G5 X.png" height="120" width="120"/>
+    <button>Add to cart</button>
+    <button>Rate</button>
+</div>
+<div id="card">
+    <h4>title</h4>
+    <img src="sliki/CompactDigitalCameras/PowerShot G7 X.png" height="120" width="120"/>
+    <button>Add to cart</button>
+    <button>Rate</button>
+</div>
+<div id="card"
+><h4>title</h4>
+    <img src="sliki/CompactDigitalCameras/PowerShot G9 X.png" height="120" width="120"/>
+    <button>Add to cart</button>
+    <button>Rate</button>
+</div>
+<div id="card">
+    <h4>title</h4>
+    <img src="sliki/CompactDigitalCameras/PowerShot SX420 IS.png" height="120" width="120"/>
+    <button>Add to cart</button>
+    <button>Rate</button>
+</div>
+<div id="card">
+    <h4>title</h4>
+    <img src="sliki/CompactDigitalCameras/PowerShot SX 530 HS.png" height="120" width="120"/>
+    <button>Add to cart</button>
+    <button>Rate</button>
+</div>
+<div id="card">
+    <h4>title</h4>
+    <img src="sliki/CompactDigitalCameras/PowerShot SX540 HS.png" height="120" width="120"/>
+    <button>Add to cart</button>
+    <button>Rate</button>
+</div>
+<div id="card">
+    <h4>title</h4><img src="sliki/CompactDigitalCameras/PowerShot SX720 HS.png" height="120" width="120"/>
+    <button>Add to cart</button>
+    <button>Rate</button>
+</div>
+</div>
+<div id="glaven">
+    <div class="sekcija">
+        <div class="naslov">Services & apps</div>
+        <div class="lista">
+            <div class="sekcija">
+                <div class="naslov">Servises  </div>
+                <div class="lista">
+                    <ul>
+                        <li>irista</li>
+                        <li>Lifecake</li>
+                        <li>Photoboks</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sekcija">
+                <div class="naslov">Apss</div>
+                <div class="lista">
+                    <ul>
+                        <li>Camera connect</li>
+                        <li>Eos remote</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sekcija">
+        <div class="naslov">Get inspired</div>
+        <div class="lista">
+            <ul>
+                <li>Stories</li>
+                <li>techniques</li>
+                <li>Canon Connectivity</li>
+                <li>Showcase</li>
+                <li>Galery</li>
+            </ul>
+        </div>
+    </div>
+    <div class="sekcija">
+        <div class="naslov">Support</div>
+        <div class="lista">
+            <ul>
+                <li>Drivers</li>
+                <li>Softwer</li>
+                <li>Manuals</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
