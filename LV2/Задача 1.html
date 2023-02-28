@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 1</title>
+    <style>
+        h3{
+            padding: 7px;
+            font-weight: normal;
+        }
+        #zolto{
+            background-color: yellow;
+            height: 100px;
+        }
+        #container{
+            background-color: #1c94c4;
+        }
+        #pin{
+            background-color: lightgreen;
+        }
+    </style>
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+
+    <script>
+        $(document).ready(function (){
+            $('button').click(function (){
+                var data=$(this).attr("title");
+                $("#container div").hide();
+                $("#"+data).show()
+            })
+        })
+
+    </script>
+</head>
+<body>
+<div id="zolto">
+<h3>Custom tab</h3>
+<button id="open" title="tab1">Open Start</button>
+<button id="connect" title="tab 2">Connect</button>
+<button id="pin" title="tab 3">Pin apps</button>
+</div>
+<div id="container">
+    <div id="tab1">You can pin apps, websites, people and folders to Start to easily get to what you use most.</div>
+    <div id="tab2">Some text... <br>You can pin apps, websites, people and folders to Start to easily get to what you use most.</div>
+    <div id="tab3">More text... <br>You can pin apps, websites, people and folders to Start to easily get to what you use most.</div>
+</div>
+</body>
+</html>
