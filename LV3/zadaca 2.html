@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <style>
+        li{
+            display: inline-block;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: cornflowerblue;
+            font-weight: bold;
+            padding: 5px;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+<script>
+    $(document).ready(function (){
+        $("#harmonika").accordion({header:"h3"});
+    });
+</script>
+<div id="nav" style="text-align: center">
+<ul>
+    <li id="prv"><a href="medicina.html">Медицина</a></li>
+    <li><a href="obrazovanie.html">Образование</a></li>
+    <li><a href="smetkovodstvo.html">Сметководство</a></li>
+    <li><a href="igri.html">Игри</a></li>
+</ul>
+</div>
+<div id="harmonika">
+    <div>
+        <h3>Тим</h3>
+        <ul>
+            <li>Алберт Ајнштајн</li>
+            <li>Ален Тјуринг</li>
+            <li>Архимед</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Претставништва</h3>
+        <ul>
+            <li>Скопје</li>
+            <li>Прилеп</li>
+            <li>Велес</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Контакт</h3>
+        <ul>
+            <li>Ул. Есенска 24/5 1000 Скопје</li>
+            <li>+38921234567</li>
+            <li>finkiit@iaispit.com</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
